@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xc4c0e4c9?>
+
+<AnchorPane blendMode="SRC_OVER" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" snapToPixel="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="mainView.CMainPageController">
+  <children>
+    <ImageView id="background.jpg" fitHeight="380.0001220703125" fitWidth="468.4050598144531" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../../images/background.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Text boundsType="VISUAL" disable="false" fill="linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, 0xff0000ff 0.0%, 0x0000ffff 30.0%, 0x000000ff 100.0%)" focusTraversable="true" fontSmoothingType="LCD" layoutX="165.0" layoutY="45.0" scaleX="3.244033129982069" scaleY="7.604184149570239" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="MDM Unix Monitoring Tool" textAlignment="CENTER" textOrigin="CENTER" underline="true">
+      <effect>
+        <Glow />
+      </effect>
+      <font>
+        <Font name="Arial" size="12.0" />
+      </font>
+    </Text>
+    <Text focusTraversable="true" fontSmoothingType="LCD" layoutX="98.0" layoutY="359.0" scaleX="1.961788139078906" scaleY="1.5029863332107474" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Left :" textAlignment="LEFT" textOrigin="CENTER" wrappingWidth="0.0" />
+    <Separator blendMode="EXCLUSION" layoutX="11.0" layoutY="336.0" opacity="1.0" prefHeight="5.0" prefWidth="446.40509033203125">
+      <effect>
+        <Shadow blurType="TWO_PASS_BOX" color="#5539b2ae" height="30.107142857142854" radius="17.336309523809522" width="41.238095238095234" />
+      </effect>
+    </Separator>
+    <TextField id="textFieldCurrentTime" alignment="CENTER" disable="false" editable="false" layoutX="199.0" layoutY="348.0" prefHeight="24.0" prefWidth="200.0" text="" />
+    <Button fx:id="btnVMStat" contentDisplay="TEXT_ONLY" graphicTextGap="6.0" layoutX="28.0" layoutY="105.0" mnemonicParsing="false" prefHeight="63.9609375" prefWidth="118.58966064453125" text="VMSTAT Settings" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
+      <effect>
+        <DropShadow>
+          <color>
+            <Color blue="0.600" green="0.886" red="1.000" fx:id="x3" />
+          </color>
+        </DropShadow>
+      </effect>
+      <font>
+        <Font name="Arial Black" size="12.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="btnSettings" contentDisplay="TEXT_ONLY" font="$x1" graphicTextGap="6.0" layoutX="315.0" layoutY="105.0" mnemonicParsing="false" prefHeight="63.9609375" prefWidth="118.58966064453125" text="Server Settings" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
+      <effect>
+        <DropShadow color="$x3" />
+      </effect>
+    </Button>
+    <Button id="btnVMStat" fx:id="btnShowRealTimeLog" contentDisplay="TEXT_ONLY" font="$x1" graphicTextGap="6.0" layoutX="315.0" layoutY="186.0" mnemonicParsing="false" prefHeight="63.9609375" prefWidth="118.58966064453125" text="Show Real-Time Log" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
+      <effect>
+        <DropShadow color="$x3" />
+      </effect>
+    </Button>
+    <Button id="btnVMStat" fx:id="btnShowVMSTATView" contentDisplay="TEXT_ONLY" font="$x1" graphicTextGap="6.0" layoutX="28.0" layoutY="186.0" mnemonicParsing="false" prefHeight="63.9609375" prefWidth="118.58966064453125" text="Show VMSTAT View" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
+      <effect>
+        <DropShadow color="$x3" />
+      </effect>
+    </Button>
+    <Button id="btnVMStat" fx:id="btnShowMonitoringResults" contentDisplay="TEXT_ONLY" font="$x1" graphicTextGap="6.0" layoutX="315.0" layoutY="264.0" mnemonicParsing="false" prefHeight="63.9609375" prefWidth="118.58966064453125" text="Server Monitoring Resilts" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
+      <effect>
+        <DropShadow color="$x3" />
+      </effect>
+    </Button>
+  </children>
+</AnchorPane>
